@@ -1,0 +1,22 @@
+@import 'src/assets/scss/global.variables';
+@import 'src/assets/scss/global.mixins';
+
+.footer {
+  background-color: $footer-base-color;
+  font-family: $main-font-family;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+
+  &__link {
+    @include reset-box;
+    color: $footer-link-color;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+  }
+}

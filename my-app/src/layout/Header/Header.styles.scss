@@ -1,0 +1,22 @@
+@import 'src/assets/scss/global.variables';
+@import 'src/assets/scss/global.mixins';
+
+.header {
+  background-color: $header-base-color;
+  font-family: $main-font-family;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  &__title {
+    @include reset-box;
+    color: $header-title-color;
+    font-weight: bold;
+    font-size: 50px;
+  }
+}
+
